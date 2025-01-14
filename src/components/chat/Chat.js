@@ -59,21 +59,21 @@ function Chat() {
     return (
         <Container>
             <Grid2 container>
-                <Grid2 item size={{ xs: 12 }} >
+                <Grid2 item size={12} >
                     <Typography variant="h5">Chat</Typography>
                 </Grid2>
             </Grid2>
             <Grid2 container component={Paper} className={classes.chatSection}>
-                <Grid2 item size={{ xs: 12 }}>
+                <Grid2 item size={12}>
                     <List className={classes.messageArea}>
                         {chatHistory.map((item, index) => {
                             return (
                                 <ListItem key={index}>
-                                    <Grid2 container component={Paper} size={{ xs: 12 }}>
-                                        <Grid2 item size={{ xs: 1 }}>
+                                    <Grid2 container component={Paper} size={12}>
+                                        <Grid2 item size={1}>
                                             {item.role === "system" ? <SmartToy /> : <Person />}
                                         </Grid2>
-                                        <Grid2 item size={{ xs: 11 }}>
+                                        <Grid2 item size={11}>
                                             <ListItemText primary={item.content}></ListItemText>
                                         </Grid2>
                                     </Grid2>
@@ -83,10 +83,10 @@ function Chat() {
                     </List>
                     <Divider />
                     <Grid2 container style={{ padding: '20px' }} spacing={2}>
-                        <Grid2 item size={{ xs: 11 }}>
+                        <Grid2 item size={11}>
                             <TextField id="msgfield" onChange={onMsgChange} onKeyDown={onKeyPress} value={msg} label="Type something" fullWidth />
                         </Grid2>
-                        <Grid2 size={{ xs: 1 }}>
+                        <Grid2 size={1}>
                             <Fab color="primary" onClick={() => addMessage()} aria-label="add"><SendIcon /></Fab>
                         </Grid2>
                     </Grid2>

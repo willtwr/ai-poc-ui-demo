@@ -24,7 +24,6 @@ const MessageBubble = styled(Box)(({ isSystem }) => ({
 }));
 
 function Chat() {
-    // const theme = useTheme();
     const [chatHistory, setChatHistory] = useState([{ role: "system", content: "Hi! How may I help you?" }]);
     const [msg, setMsg] = useState('');
     

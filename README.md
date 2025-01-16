@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# AI PoC UI Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A repo for me to learn React and Material-UI to build a simple front-end for PoC.
 
 ## Available Scripts
 
